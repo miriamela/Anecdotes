@@ -1,0 +1,154 @@
+.App {
+  overflow: scroll;
+  box-sizing: border-box;
+  border: 15px double Black;
+  border-radius: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  & h1 {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 900;
+  }
+  & .showAnecdote {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // border: solid;
+    width: 100%;
+    height: 40%;
+    & .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Permanent Marker";
+      font-size: 13px;
+      border-radius: 25px;
+      padding: 2px 5px 2px 5px;
+      text-align: center;
+      border: 1px solid Black;
+      width: 90%;
+      height: 65%;
+    }
+    & p:nth-child(2) {
+      font-family: "Roboto";
+      font-size: 12px;
+      height: 10%;
+    }
+  }
+  & .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    // border: solid;
+    & .vote {
+      outline: none;
+      border: 2px solid black;
+      background-color: #18658f;
+      margin-right: 10px;
+      height: 50%;
+      width: 30%;
+      border-radius: 10px;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 900;
+    }
+    & .vote:hover {
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    & .anecdote {
+      outline: none;
+      border: 2px solid black;
+      background-color: #18658f;
+      height: 50%;
+      width: 40%;
+      border-radius: 10px;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 900;
+    }
+    & .anecdote:hover {
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  & .mostVote {
+    // border: solid;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    & h2 {
+      font-family: Roboto;
+      font-size: 18px;
+    }
+    & .text2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Permanent Marker";
+      font-size: 13px;
+      border-radius: 25px;
+      padding: 2px 5px 2px 5px;
+      text-align: center;
+      border: 1px solid Black;
+      width: 90%;
+      height: 65%;
+    }
+    & p:nth-child(3) {
+      font-family: "Roboto";
+      font-size: 12px;
+      height: 10%;
+    }
+  }
+  @media all and (min-width: 641px) {
+    & h1 {
+      font-size: 35px;
+    }
+    & .showAnecdote .text {
+      font-size: 20px;
+      padding: 2px 7px 2px 7px;
+      width: 80%;
+      height: 65%;
+    }
+    & .showAnecdote p:nth-child(2) {
+      font-size: 17px;
+      height: 10%;
+    }
+    & .buttons .anecdote {
+      font-size: 18px;
+    }
+    & .buttons .vote {
+      font-size: 18px;
+    }
+    & .mostVote h2 {
+      font-size: 25px;
+    }
+    & .mostVote .text2 {
+      font-size: 18px;
+      padding: 2px 7px 2px 7px;
+      width: 75%;
+      height: 65%;
+    }
+    & .mostVote p:nth-child(3) {
+      font-size: 17px;
+      height: 10%;
+    }
+  }
+}
